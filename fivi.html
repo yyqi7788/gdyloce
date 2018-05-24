@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>爱你，从一而终</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+	body{
+		background-color: peachpuff;
+	}
+	#q22{
+	background: url(images/F775F58784B5ACBE8F2D4EC857E331B8.gif) no-repeat 100% 135%;
+}
+	footer{
+		  bottom: 10%;  
+  left: 0px;  
+  color: #666;  
+  width: 100%;  
+  clear: both;//清除浮动  
+  line-height: 90px;  
+  background-color: #ebebed;  
+	}
+	
+</style>
+<embed src="music/咱们结婚吧-齐晨.mp3" width="0" height="0"></embed>
+<!--<embed src="music/生日快乐歌英文.mp3" hidden="true" autostart="true" loop="true">-->
+<div class="container-fluid" id="q22">
+  <h1 style="color: salmon;">爱你，从一而终</h1>
+  <p id="text" style="color: cyan;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  
+</div>
+<div id="">
+<img src="images/b0a41223483.jpg"/>
+</div>
+<br />
+<embed src="music/咱们结婚吧-齐晨.mp3" width="100" height="120"></embed>
+<footer style="text-align: center;">
+	<a href="too.html" >next</a>
+</footer>
+
+
+</body>
+<script src="js/hammer.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var i=0;
+	var str="小富婆，今天就是你生日哦，你这个小朋友在以后的每一天都要开心哦，要记得按时吃饭，要有时间观念，上课不要迟到啦！还记得曾经我都不知道自己的生日，你把日历翻到我出生的日期，对我说，以后520就是你的生日吧，我呢，就过528的生日，我当时就想这个小朋友我要用一生去守护，可是我还是弄丢了你，你不在缠着我要去吃这个要去吃那个，看到我你也不在奔向我的怀抱，过马路你也不在牵着我手，我每一天都活在曾经的世界你，没有你，我的世界黯淡无光，有了你我的世界才会丰富多彩，宝贝，回来吧，我想看着你在我身边笑，在我身边闹，我想牵着你的手一直一直走下去。爱你，从未改变。生日快乐！";
+	
+	window.onload=function typing(){
+		//获取div
+		var mydiv=document.getElementById("text");
+		mydiv.innerHTML+=str.charAt(i);
+		i++;
+		var id=setTimeout(typing,100);
+		if(i==str.length){
+			clearTimeout(id);
+		}
+	}
+</script>
+</html>
